@@ -27,6 +27,7 @@ To add a Blinkstick to your installation, add the following to your `configurati
 light:
   - platform: blinksticklight
     serial: BS000795-1.1
+    index: 0
 ```
 
 {% configuration %}
@@ -35,6 +36,11 @@ serial:
   required: true
   default: 640
   type: string
+index:
+  description: Index of the LED.
+  required: false
+  type: integer
+  default: 0
 name:
   description: Name of the stick.
   required: false
